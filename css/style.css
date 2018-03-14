@@ -1,0 +1,106 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#nav__logo {
+  position: fixed;
+  top: 13px;
+  width: 250px;
+  height: 80px;
+}
+
+@media (max-width: 767px) {
+  #nav__logo {
+    width: 130px;
+    height: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #nav__logo {
+    left: 255px;
+  }
+}
+
+nav .nav-link {
+  font-size: 18px !important;
+}
+
+main .jumbotron {
+  margin-bottom: 0px !important;
+  padding-top: 70px;
+  text-align: center;
+  border-radius: 0px;
+}
+
+main .jumbotron p {
+  margin: 35px 0px !important;
+}
+
+main #section__historia .jumbotron {
+  background-color: #0D78E2;
+  color: #F7F9F9;
+}
+
+main #section__servicos .jumbotron {
+  background-color: #F7F9F9;
+}
+
+main #section__config .jumbotron {
+  background-color: #FFBE0B;
+}
+
+main #section__config .remove_estilo_li {
+  list-style-type: none !important;
+}
+
+main #section__config #accordion_amd #config_amd, main #section__config #accordion_intel #config_amd {
+  padding: 0px 0px !important;
+}
+
+main #section__config #accordion_amd #config_amd .btn-link, main #section__config #accordion_intel #config_amd .btn-link {
+  color: white;
+  font-size: 20px;
+}
+
+main #section__config #accordion_amd #config_intel, main #section__config #accordion_intel #config_intel {
+  padding: 0px 0px !important;
+}
+
+main #section__config #accordion_amd #config_intel .btn-link, main #section__config #accordion_intel #config_intel .btn-link {
+  color: white;
+  font-size: 20px;
+}
+
+main #section__config #form_contato .form-input-group {
+  margin: 10px 0px;
+}
+
+main #section__config #form_contato label {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+main #section__footer .jumbotron {
+  padding-top: 70px;
+}
+
+main #section__footer ul li {
+  list-style-type: none !important;
+}
+
+@media screen and (max-width: 767px) {
+  main #section__footer .border-left {
+    border-left: 0px !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

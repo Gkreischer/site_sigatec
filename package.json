@@ -1,0 +1,26 @@
+{
+  "name": "sigatec",
+  "version": "1.0.0",
+  "description": "Site da sigatec",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "clean": "rimraf dist",
+     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+     "imagemin": "imagemin images/* -o dist/images",
+     "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
+  },
+  "author": "Gustavo Kreischer de Almeida",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "npm": "^5.7.1",
+    "popper.js": "^1.12.9"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.2"
+  }
+}

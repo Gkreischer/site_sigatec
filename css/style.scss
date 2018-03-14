@@ -1,0 +1,160 @@
+$blue: #0D78E2;
+$yellow: #FFBE0B;
+$white: #F7F9F9;
+$light-blue: #BED8D4;
+
+@mixin jumbotron($color){
+    
+    .jumbotron {
+        background-color: $color;
+        @content;
+    }
+}
+
+@mixin btn-link($color, $size){
+
+    .btn-link{
+    
+        color: $color;
+        font-size: $size;
+    }
+}
+
+html {
+    height: 100%; 
+}
+
+body {
+    min-height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+#nav__logo{
+    position: fixed;
+    top: 13px;
+    width: 250px;
+    height: 80px;
+
+    @media (max-width: 767px){
+        width: 130px;
+        height: 40px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 991px){
+
+        left: 255px;
+    }
+}
+
+nav {
+    
+    .nav-link {
+
+        font-size: 18px!important;
+    }
+}
+
+main {
+
+    .jumbotron{
+
+        margin-bottom: 0px !important;
+
+        padding-top: 70px;
+
+        text-align: center;
+
+        border-radius: 0px;
+
+        p {
+            margin: 35px 0px!important;
+        }
+    }
+
+    #section__historia{
+
+        .jumbotron {
+            background-color: $blue;
+            color: $white;
+        }
+
+    }
+
+
+    #section__servicos{
+
+        @include jumbotron($white){
+           
+        };
+        
+    }
+
+    #section__config{
+        
+        @include jumbotron($yellow);
+        
+        .remove_estilo_li {
+            list-style-type: none!important;
+        }
+       
+        #accordion_amd, #accordion_intel {
+
+
+            #config_amd{
+                
+                @include btn-link(white, 20px);
+
+                padding: 0px 0px !important;
+            }
+
+
+            #config_intel{
+                
+                @include btn-link(white, 20px);
+
+                padding: 0px 0px !important;
+            }
+        }
+
+        #form_contato {
+
+            .form-input-group {
+                margin: 10px 0px;
+            }
+
+            label {
+                font-weight: bold;
+                font-size: 16px;
+            }
+        }
+    }
+
+    #section__footer {
+        
+        .jumbotron {
+
+            padding-top: 70px;
+            
+        }
+        ul {
+            li{
+                list-style-type: none!important;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            .border-left {
+                
+                border-left: 0px!important;
+            }
+        }
+    }
+
+    
+}
