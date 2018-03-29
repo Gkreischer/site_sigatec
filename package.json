@@ -5,10 +5,10 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "clean": "rimraf dist",
-     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
-     "imagemin": "imagemin images/* -o dist/images",
-     "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin images/* -o dist/images",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
   },
   "author": "Gustavo Kreischer de Almeida",
@@ -21,6 +21,10 @@
     "popper.js": "^1.12.9"
   },
   "devDependencies": {
-    "rimraf": "^2.6.2"
+    "cssmin": "^0.4.3",
+    "htmlmin": "0.0.7",
+    "rimraf": "^2.6.2",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.5.1"
   }
 }
