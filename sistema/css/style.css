@@ -27,6 +27,7 @@ body {
   text-decoration: none;
   color: white;
   padding-top: 10px 20px;
+  transition: all 0.5s;
 }
 
 #sidebar nav li a:hover {
