@@ -15,23 +15,58 @@
 
     <link rel="stylesheet" href="./css/style.css">
     <!-- endbuild -->
-    <title>Sistema de OS</title>
+    <title>Sigatec Informática</title>
 </head>
 
 <body id="body">
 
-    <main class="container-fluid" role="main">
-        <div class="row">
-            <div class="col-12 col-sm-4 col-md-4">
-                <div class="bg-primary"></div>
-                
+    <main id="wrapper" role="main">
+        <nav class="bg-dark text-white" id="sidebar">
+            <!-- Sidebar Header -->
+            <div class="sidebar-header">
+                <h3>Menu</div>
             </div>
-            <div class="col-12 col-sm-8 col-md-8">
-                <h1>Ações</h1>
-            </div>
-        </div>
-    </main>
 
+            <!-- Sidebar Links -->
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+
+                <li>
+                    <!-- Link with dropdown items -->
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Page</a>
+                        </li>
+                        <li>
+                            <a href="#">Page</a>
+                        </li>
+                        <li>
+                            <a href="#">Page</a>
+                        </li>
+                    </ul>
+
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+            </ul>
+        </nav>
+
+        <section id="content" role="section">
+            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                <i class="glyphicon glyphicon-align-left"></i>
+                Toggle Sidebar
+            </button>
+        </section>
+    </main>
     <!-- build:js js/main.js -->
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
