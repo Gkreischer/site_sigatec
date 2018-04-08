@@ -9,7 +9,7 @@
     <!-- build:css css/main.css -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
     <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
 
@@ -20,52 +20,67 @@
 
 <body id="body">
 
-    <main id="wrapper" role="main">
-        <nav class="bg-dark text-white" id="sidebar">
-            <!-- Sidebar Header -->
-            <div class="sidebar-header">
-                <h3>Menu</div>
+    <main role="main">
+
+        <div class="container-fluid mx-0 px-0">
+            <div class="row no-gutters">
+                <div class="col-2" id="sidebar">
+                    <h3>Menu</h3>
+                    <nav>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Home</a>
+                            </li>
+                            <li class="nav-item dropright">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">OS</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropright">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Clientes</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropright">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Peças</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contato</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-10" id="content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12">
+                                <div class="card my-3">
+                                    <div class="card-header text-center"><h4>Home</h4></div>
+                                    <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-12 col-md-12 text-center">
+                                                    <h3>Seja bem-vindo</h3>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <!-- Sidebar Links -->
-            <ul class="list-unstyled components">
-                <li class="active">
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-
-                <li>
-                    <!-- Link with dropdown items -->
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="#">Page</a>
-                        </li>
-                        <li>
-                            <a href="#">Page</a>
-                        </li>
-                        <li>
-                            <a href="#">Page</a>
-                        </li>
-                    </ul>
-
-                    <li>
-                        <a href="#">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-            </ul>
-        </nav>
-
-        <section id="content" role="section">
-            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
-                <i class="glyphicon glyphicon-align-left"></i>
-                Toggle Sidebar
-            </button>
-        </section>
+        </div>
     </main>
     <!-- build:js js/main.js -->
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
