@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- endbuild -->
+    <title>Sigatec Informática</title>
+</head>
+
+<body id="body">
+
+    <main id="wrapper" role="main">
+        <nav class="bg-dark text-white" id="sidebar">
+            <!-- Sidebar Header -->
+            <div class="sidebar-header">
+                <h3>Menu</div>
+            </div>
+
+            <!-- Sidebar Links -->
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+
+                <li>
+                    <!-- Link with dropdown items -->
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Page</a>
+                        </li>
+                        <li>
+                            <a href="#">Page</a>
+                        </li>
+                        <li>
+                            <a href="#">Page</a>
+                        </li>
+                    </ul>
+
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+            </ul>
+        </nav>
+
+        <section id="content" role="section">
+            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                <i class="glyphicon glyphicon-align-left"></i>
+                Toggle Sidebar
+            </button>
+        </section>
+    </main>
+    <!-- build:js js/main.js -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
