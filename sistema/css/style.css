@@ -10,7 +10,6 @@ body {
   background-color: #0D78E2;
   color: #fafafa;
   background-color: #515751;
-  height: 100vh !important;
 }
 
 #sidebar h3 {
@@ -32,10 +31,15 @@ body {
 
 #sidebar nav li a:hover {
   border: 1px solid #596869;
+  border-radius: 0px;
   background-color: #596869;
 }
 
-#sidebar nav li .dropdown-item {
+#sidebar nav li .dropdown-menu {
+  margin-left: -30px;
+}
+
+#sidebar nav li .dropdown-menu .dropdown-item {
   color: black;
 }
 

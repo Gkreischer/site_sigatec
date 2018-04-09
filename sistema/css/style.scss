@@ -15,7 +15,7 @@ body {
     background-color: $blue;
     color: #fafafa;
     background-color: #515751;
-    height: 100vh!important;
+    
 
     h3 {
         margin: 15px 15px;
@@ -36,11 +36,17 @@ body {
 
             a:hover {
                 border: 1px solid #596869;
+                border-radius: 0px;
                 background-color: #596869;
             }
 
-            .dropdown-item {
-                color: black;
+            .dropdown-menu {
+
+                margin-left: -30px;
+
+                .dropdown-item {
+                    color: black;
+                }
             }
 
         }
@@ -50,4 +56,5 @@ body {
 #content {
     
     background-color: $blue;
+
 }
