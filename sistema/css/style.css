@@ -4,12 +4,14 @@ html {
 
 body {
   min-height: 100%;
+  background-color: #515751;
 }
 
 #sidebar {
   background-color: #0D78E2;
   color: #fafafa;
   background-color: #515751;
+  height: 100vh !important;
 }
 
 #sidebar h3 {
@@ -45,5 +47,9 @@ body {
 
 #content {
   background-color: #0D78E2;
+}
+
+#form_cd_clientes label {
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */

@@ -9,13 +9,14 @@ html {
 
 body {
     min-height: 100%;
+    background-color: #515751;
 }
 
 #sidebar {
     background-color: $blue;
     color: #fafafa;
     background-color: #515751;
-    
+    height: 100vh!important;
 
     h3 {
         margin: 15px 15px;
@@ -57,4 +58,10 @@ body {
     
     background-color: $blue;
 
+}
+
+#form_cd_clientes {
+    label {
+        font-weight: bold;
+    }
 }

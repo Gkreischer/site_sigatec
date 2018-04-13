@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+    <link rel="stylesheet" href="./../node_modules/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./../css/style.css">
+    <!-- endbuild -->
+    <title>SimpleOS - Cadastro de Clientes</title>
+</head>
+
+<body id="body">
+
+    <main role="main">
+
+        <div class="container-fluid mx-0 px-0">
+            <div class="row no-gutters">
+                <div class="col-2" id="sidebar">
+                    <h3>Menu</h3>
+                    <nav>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active" href=".././index.html">Home</a>
+                            </li>
+                            <!-- OS -->
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#menuOS" role="button" aria-haspopup="true" aria-expanded="false">OS</a>
+                                <div class="collapse list-unstyled" id="menuOS">
+                                    <a class="dropdown-item" href=".././os/cd_os.html">Cadastrar</a>
+                                    <a class="dropdown-item" href=".././os/ac_os.html">Acompanhar</a>
+                                    <a class="dropdown-item" href=".././os/alt_os.html">Alterar</a>
+                                    <a class="dropdown-item" href=".././os/ex_os.html">Excluir</a>
+                                </div>
+                            </li>
+                            <!-- Clientes -->
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#menuCliente" role="button" aria-haspopup="true" aria-expanded="false">Clientes</a>
+                                <div class="collapse list-unstyled" id="menuCliente">
+                                    <a class="dropdown-item" href=".././clientes/cd_cliente.html">Cadastrar</a>
+                                    <a class="dropdown-item" href=".././clientes/alt_cliente.html">Alterar</a>
+                                    <a class="dropdown-item" href=".././clientes/ex_cliente.html">Excluir</a>
+                                </div>
+                            </li>
+                            <!-- Peças -->
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#menuPeca" role="button" aria-haspopup="true" aria-expanded="false">Peças</a>
+                                <div class="collapse list-unstyled" id="menuPeca">
+                                    <a class="dropdown-item" href=".././pecas/cd_peca.html">Cadastrar</a>
+                                    <a class="dropdown-item" href=".././pecas/estoque.html">Estoque</a>
+                                    <a class="dropdown-item" href=".././pecas/alt_peca.html">Alterar</a>
+                                    <a class="dropdown-item" href=".././pecas/ex_peca.html">Excluir</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href=".././contato.html">Contato</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-10" id="content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12">
+                                <div class="card my-3">
+                                    <div class="card-header text-center">
+                                        <h4>Cadastro de Clientes</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-12 col-md-12">
+                                                <form role="form" id="form_cd_clientes">
+                                                    <div class="row">
+                                                        <div class="col-8 col-sm-8 col-md-8">
+                                                            <div class="form-input-group">
+                                                                <label>Nome:</label>
+                                                                <input class="form-control" type="text" name="nome_cliente" id="nome_cliente">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 col-sm-4 col-md-4">
+                                                            <div class="form-input-group">
+                                                                <label>CPF:</label>
+                                                                <input class="form-control" type="number" name="cpf_cliente" id="cpf_cliente">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-3 col-sm-3 col-md-3">
+                                                            <div class="form-input-group">
+                                                                <label>Telefone:</label>
+                                                                <input class="form-control" type="number" name="tel_cliente" id="tel_cliente">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 col-sm-6 col-md-6">
+                                                            <div class="form-input-group">
+                                                                <label>Email:</label>
+                                                                <input class="form-control" type="email" name="email_cliente" id="email_cliente">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3 col-sm-3 col-md-3">
+                                                            <div class="form-input-group">
+                                                                <label>Estado:</label>
+                                                                <input class="form-control" type="text" name="estado_cliente" id="estado_cliente">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-5 col-sm-5 col-md-5">
+                                                            <div class="form-input-group">
+                                                                <label>Endereço:</label>
+                                                                <input class="form-control" type="text" name="endereco_cliente" id="endereco_cliente">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3 col-sm-3 col-md-3">
+                                                            <div class="form-input-group">
+                                                                <label>Bairro:</label>
+                                                                <input class="form-control" type="text" name="bairro_cliente" id="bairro_cliente">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 col-sm-4 col-md-4">
+                                                            <div class="form-input-group">
+                                                                <label>Cidade:</label>
+                                                                <input class="form-control" type="text" name="cidade_cliente" id="cidade_cliente">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12 col-sm-12 col-md-12">
+                                                            <label>Observações:</label>
+                                                            <textarea class="form-control" rows="5" name="obs_cliente" id="obs_cliente"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12 col-sm-12 col-md-12">
+                                                            <button class="btn btn-primary mt-3" id="btn_envia" type="submit">Enviar</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- build:js js/main.js -->
+    <script src=".././node_modules/jquery/dist/jquery.min.js"></script>
+    <script src=".././node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src=".././node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src=".././js/main.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

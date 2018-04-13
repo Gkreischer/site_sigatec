@@ -31,26 +31,29 @@
                             <li class="nav-item">
                                 <a class="nav-link active" href="#">Home</a>
                             </li>
-                            <li class="nav-item dropright">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">OS</a>
-                                <div class="dropdown-menu">
+                            <!-- OS -->
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#menuOS" role="button" aria-haspopup="true" aria-expanded="false">OS</a>
+                                <div class="collapse list-unstyled" id="menuOS">
                                     <a class="dropdown-item" href="./os/cd_os.html">Cadastrar</a>
                                     <a class="dropdown-item" href="./os/ac_os.html">Acompanhar</a>
                                     <a class="dropdown-item" href="./os/alt_os.html">Alterar</a>
                                     <a class="dropdown-item" href="./os/ex_os.html">Excluir</a>
                                 </div>
                             </li>
-                            <li class="nav-item dropright">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Clientes</a>
-                                <div class="dropdown-menu">
+                            <!-- Clientes -->
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#menuCliente" role="button" aria-haspopup="true" aria-expanded="false">Clientes</a>
+                                <div class="collapse list-unstyled" id="menuCliente">
                                     <a class="dropdown-item" href="./clientes/cd_cliente.html">Cadastrar</a>
                                     <a class="dropdown-item" href="./clientes/alt_cliente.html">Alterar</a>
                                     <a class="dropdown-item" href="./clientes/ex_cliente.html">Excluir</a>
                                 </div>
                             </li>
-                            <li class="nav-item dropright">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Peças</a>
-                                <div class="dropdown-menu">
+                            <!-- Peças -->
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#menuPeca" role="button" aria-haspopup="true" aria-expanded="false">Peças</a>
+                                <div class="collapse list-unstyled" id="menuPeca">
                                     <a class="dropdown-item" href="./pecas/cd_peca.html">Cadastrar</a>
                                     <a class="dropdown-item" href="./pecas/estoque.html">Estoque</a>
                                     <a class="dropdown-item" href="./pecas/alt_peca.html">Alterar</a>
@@ -58,7 +61,7 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contato.html">Contato</a>
+                                <a class="nav-link" href="./contato.html">Contato</a>
                             </li>
                         </ul>
                     </nav>
@@ -71,41 +74,45 @@
                                     <div class="card-header text-center">
                                         <h4>Home</h4>
                                     </div>
-                                    <div class="card-body">
+                                    <div class="card-body mx-auto">
                                         <div class="row">
                                             <div class="col-12 col-sm-12 col-md-12 text-center">
                                                 <h3>Seja bem-vindo</h3>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12 col-sm-12 col-md-12 text-center">
-                                            <img class="img-fluid img-thumbnail" src="./images/default_usuario.jpg" width="200rem;">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-12 col-md-12 text-center">
+                                                <img class="img-fluid img-thumbnail" src="./images/default_usuario.jpg" width="200rem;">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="row mt-3 mx-auto">
-                                        <div class="col-12 col-sm-12 col-md-12">
-                                            <div class="card" style="width: 18rem;">
-                                                <div class="card-header text-center">
-                                                    <b>Dados do Usuário</b>
+                                        <div class="row mt-3 text-center">
+                                            <div class="col-12 col-sm-12 col-md-12">
+                                                <div class="card" style="width: 18rem;">
+                                                    <div class="card-header text-center">
+                                                        <b>Dados do Usuário</b>
+                                                    </div>
+                                                    <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item">
+                                                            <b>Nome:</b> Cras justo odio</li>
+                                                        <li class="list-group-item">
+                                                            <b>Desde:</b> ac facilisis in</li>
+                                                        <li class="list-group-item">
+                                                            <b>Cargo:</b> Vestibulum at eros</li>
+                                                    </ul>
                                                 </div>
-                                                <ul class="list-group list-group-flush">
-                                                    <li class="list-group-item"><b>Nome:</b> Cras justo odio</li>
-                                                    <li class="list-group-item"><b>Desde:</b> ac facilisis in</li>
-                                                    <li class="list-group-item"><b>Cargo:</b> Vestibulum at eros</li>
-                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="row text-center my-3">
+                                            <div class="col-12 col-sm-12 col-md-12 text-center">
+                                                <form role="form" id="imagem_usuario" class="">
+                                                    <label for="envia_foto" class="btn btn-warning mt-2">Alterar</label>
+                                                    <button type="button" class="btn btn-primary">Enviar</button>
+                                                    <input type="file" id="envia_foto" name="foto_usuario" hidden>
+                                                </form>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row text-center my-3">
-                                        <div class="col-12 col-sm-12 col-md-12 text-center">
-                                            <form role="form" id="imagem_usuario" class="">
-                                                <label for="envia_foto" class="btn btn-warning mt-2">Alterar</label>
-                                                <button type="button" class="btn btn-primary">Enviar</button>
-                                                <input type="file" id="envia_foto" name="foto_usuario" hidden>
-                                            </form>
-                                        </div>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
